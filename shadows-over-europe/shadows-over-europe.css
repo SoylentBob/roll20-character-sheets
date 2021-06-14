@@ -1,0 +1,16 @@
+.soe-two-col-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.attribute-group {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 15px;
+}
+
+.attribute-group fieldset select {
+  margin: auto;
+}
