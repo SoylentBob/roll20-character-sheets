@@ -14,3 +14,13 @@
 .attribute-group fieldset select {
   margin: auto;
 }
+
+.character-attributes tr th,
+.character-attributes tr td {
+  padding: 5px;
+  text-align: center;
+}
+
+.character-attributes tr td.name {
+  text-align: left;
+}

@@ -1,234 +1,198 @@
 <div class="soe-two-col-layout">
 	<div>
-		<label>Stärke (2TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_strength" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{strength}]]"></button>
-		</div>
+		<table class="character-attributes">
+			<tr>
+				<th></th>
+				<th>W4</th>
+				<th>W6</th>
+				<th>W8</th>
+				<th>W10</th>
+				<th>W12</th>
+				<th></th>
+				<th>Kosten</th>
+			</tr>
+			<tr>
+				<td class="name"><b>Stärke</b></td>
+				<td><input type="radio" id="d4_strength" name="attr_strength" value="4!"></td>
+				<td><input type="radio" id="d6_strength" name="attr_strength" value="6!"></td>
+				<td><input type="radio" id="d8_strength" name="attr_strength" value="8!"></td>
+				<td><input type="radio" id="d10_strength" name="attr_strength" value="10!"></td>
+				<td><input type="radio" id="d12_strength" name="attr_strength" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{strength}]]"></button></td>
+				<td>2TP</td>
+			</tr>
 
-		<label>Gewandtheit (2TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_agility" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Gewandtheits Probe [[1d@{agility}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Gewandtheit</b></td>
+				<td><input type="radio" id="d4_agility" name="attr_agility" value="4!"></td>
+				<td><input type="radio" id="d6_agility" name="attr_agility" value="6!"></td>
+				<td><input type="radio" id="d8_agility" name="attr_agility" value="8!"></td>
+				<td><input type="radio" id="d10_agility" name="attr_agility" value="10!"></td>
+				<td><input type="radio" id="d12_agility" name="attr_agility" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{agility}]]"></button></td>
+				<td>2TP</td>
+			</tr>
 
-		<label>Nahkampf (2TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_closecombat" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Nahkampf Probe [[1d@{closecombat}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Nahkampf</b></td>
+				<td><input type="radio" id="d4_closecombat" name="attr_closecombat" value="4!"></td>
+				<td><input type="radio" id="d6_closecombat" name="attr_closecombat" value="6!"></td>
+				<td><input type="radio" id="d8_closecombat" name="attr_closecombat" value="8!"></td>
+				<td><input type="radio" id="d10_closecombat" name="attr_closecombat" value="10!"></td>
+				<td><input type="radio" id="d12_closecombat" name="attr_closecombat" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{closecombat}]]"></button></td>
+				<td>2TP</td>
+			</tr>
 
-		<label>Fernkampf (2TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_rangedcombat" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Fernkampf Probe [[1d@{rangedcombat}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Fernkampf</b></td>
+				<td><input type="radio" id="d4_rangedcombat" name="attr_rangedcombat" value="4!"></td>
+				<td><input type="radio" id="d6_rangedcombat" name="attr_rangedcombat" value="6!"></td>
+				<td><input type="radio" id="d8_rangedcombat" name="attr_rangedcombat" value="8!"></td>
+				<td><input type="radio" id="d10_rangedcombat" name="attr_rangedcombat" value="10!"></td>
+				<td><input type="radio" id="d12_rangedcombat" name="attr_rangedcombat" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{rangedcombat}]]"></button></td>
+				<td>2TP</td>
+			</tr>
 
-		<label>Technik (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_tech" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Technik Probe [[1d@{tech}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Technik</b></td>
+				<td><input type="radio" id="d4_tech" name="attr_tech" value="4!"></td>
+				<td><input type="radio" id="d6_tech" name="attr_tech" value="6!"></td>
+				<td><input type="radio" id="d8_tech" name="attr_tech" value="8!"></td>
+				<td><input type="radio" id="d10_tech" name="attr_tech" value="10!"></td>
+				<td><input type="radio" id="d12_tech" name="attr_tech" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{tech}]]"></button></td>
+				<td>1TP</td>
+			</tr>
 
-		<label>Wissen (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_knowledge" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Wissens Probe [[1d@{knowledge}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Wissen</b></td>
+				<td><input type="radio" id="d4_knowledge" name="attr_knowledge" value="4!"></td>
+				<td><input type="radio" id="d6_knowledge" name="attr_knowledge" value="6!"></td>
+				<td><input type="radio" id="d8_knowledge" name="attr_knowledge" value="8!"></td>
+				<td><input type="radio" id="d10_knowledge" name="attr_knowledge" value="10!"></td>
+				<td><input type="radio" id="d12_knowledge" name="attr_knowledge" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{knowledge}]]"></button></td>
+				<td>1TP</td>
+			</tr>
 
-		<label>Wahrnehmung (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_perception" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Wahrnehmungs Probe [[1d@{perception}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Wahrnehmung</b></td>
+				<td><input type="radio" id="d4_perception" name="attr_perception" value="4!"></td>
+				<td><input type="radio" id="d6_perception" name="attr_perception" value="6!"></td>
+				<td><input type="radio" id="d8_perception" name="attr_perception" value="8!"></td>
+				<td><input type="radio" id="d10_perception" name="attr_perception" value="10!"></td>
+				<td><input type="radio" id="d12_perception" name="attr_perception" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{perception}]]"></button></td>
+				<td>1TP</td>
+			</tr>
 
-		<label>Fahrzeuge steuern (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_drive_vehicles" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Fahrzeuge steuern Probe [[1d@{drive_vehicles}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Fahrzeuge steuern</b></td>
+				<td><input type="radio" id="d4_drive_vehicles" name="attr_drive_vehicles" value="4!"></td>
+				<td><input type="radio" id="d6_drive_vehicles" name="attr_drive_vehicles" value="6!"></td>
+				<td><input type="radio" id="d8_drive_vehicles" name="attr_drive_vehicles" value="8!"></td>
+				<td><input type="radio" id="d10_drive_vehicles" name="attr_drive_vehicles" value="10!"></td>
+				<td><input type="radio" id="d12_drive_vehicles" name="attr_drive_vehicles" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{drive_vehicles}]]"></button></td>
+				<td>1TP</td>
+			</tr>
 
-		<label>Heimlich (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_secretly" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Heimlich Probe [[1d@{secretly}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Heimlich</b></td>
+				<td><input type="radio" id="d4_secretly" name="attr_secretly" value="4!"></td>
+				<td><input type="radio" id="d6_secretly" name="attr_secretly" value="6!"></td>
+				<td><input type="radio" id="d8_secretly" name="attr_secretly" value="8!"></td>
+				<td><input type="radio" id="d10_secretly" name="attr_secretly" value="10!"></td>
+				<td><input type="radio" id="d12_secretly" name="attr_secretly" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{secretly}]]"></button></td>
+				<td>1TP</td>
+			</tr>
 
-		<label>Reden (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_talk" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Reden Probe [[1d@{talk}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Reden</b></td>
+				<td><input type="radio" id="d4_talk" name="attr_talk" value="4!"></td>
+				<td><input type="radio" id="d6_talk" name="attr_talk" value="6!"></td>
+				<td><input type="radio" id="d8_talk" name="attr_talk" value="8!"></td>
+				<td><input type="radio" id="d10_talk" name="attr_talk" value="10!"></td>
+				<td><input type="radio" id="d12_talk" name="attr_talk" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{talk}]]"></button></td>
+				<td>1TP</td>
+			</tr>
 
-		<label>Schlösser knacken (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_lockpicking" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Schlösser knacken Probe [[1d@{lockpicking}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Schlösser knacken</b></td>
+				<td><input type="radio" id="d4_lockpicking" name="attr_lockpicking" value="4!"></td>
+				<td><input type="radio" id="d6_lockpicking" name="attr_lockpicking" value="6!"></td>
+				<td><input type="radio" id="d8_lockpicking" name="attr_lockpicking" value="8!"></td>
+				<td><input type="radio" id="d10_lockpicking" name="attr_lockpicking" value="10!"></td>
+				<td><input type="radio" id="d12_lockpicking" name="attr_lockpicking" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{lockpicking}]]"></button></td>
+				<td>1TP</td>
+			</tr>
 
-		<label>Medizin (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_medicine" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Medizin Probe [[1d@{medicine}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Medizin</b></td>
+				<td><input type="radio" id="d4_medicine" name="attr_medicine" value="4!"></td>
+				<td><input type="radio" id="d6_medicine" name="attr_medicine" value="6!"></td>
+				<td><input type="radio" id="d8_medicine" name="attr_medicine" value="8!"></td>
+				<td><input type="radio" id="d10_medicine" name="attr_medicine" value="10!"></td>
+				<td><input type="radio" id="d12_medicine" name="attr_medicine" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{medicine}]]"></button></td>
+				<td>1TP</td>
+			</tr>
 
-		<label>Sprengstoff (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_explosives" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Sprengstoff Probe [[1d@{explosives}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Sprengstoff</b></td>
+				<td><input type="radio" id="d4_explosives" name="attr_explosives" value="4!"></td>
+				<td><input type="radio" id="d6_explosives" name="attr_explosives" value="6!"></td>
+				<td><input type="radio" id="d8_explosives" name="attr_explosives" value="8!"></td>
+				<td><input type="radio" id="d10_explosives" name="attr_explosives" value="10!"></td>
+				<td><input type="radio" id="d12_explosives" name="attr_explosives" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{explosives}]]"></button></td>
+				<td>1TP</td>
+			</tr>
 
-		<label>Glück (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_luck" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Glück Probe [[1d@{luck}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Glück</b></td>
+				<td><input type="radio" id="d4_luck" name="attr_luck" value="4!"></td>
+				<td><input type="radio" id="d6_luck" name="attr_luck" value="6!"></td>
+				<td><input type="radio" id="d8_luck" name="attr_luck" value="8!"></td>
+				<td><input type="radio" id="d10_luck" name="attr_luck" value="10!"></td>
+				<td><input type="radio" id="d12_luck" name="attr_luck" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{luck}]]"></button></td>
+				<td>1TP</td>
+			</tr>
 
-		<label>Kryptographie (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_cryptography" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Kryptographie Probe [[1d@{cryptography}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Kryptographie</b></td>
+				<td><input type="radio" id="d4_cryptography" name="attr_cryptography" value="4!"></td>
+				<td><input type="radio" id="d6_cryptography" name="attr_cryptography" value="6!"></td>
+				<td><input type="radio" id="d8_cryptography" name="attr_cryptography" value="8!"></td>
+				<td><input type="radio" id="d10_cryptography" name="attr_cryptography" value="10!"></td>
+				<td><input type="radio" id="d12_cryptography" name="attr_cryptography" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{cryptography}]]"></button></td>
+				<td>1TP</td>
+			</tr>
 
-		<label>Fleddern (1TP)</label>
-		<div class="attribute-group">
-			<fieldset>
-				<select name="attr_rob" class="dtype">
-					<option value="4!">d4</option>
-					<option value="6!">d6</option>
-					<option value="8!">d8</option>
-					<option value="10!">d10</option>
-					<option value="12!">d12</option>
-				</select>
-			</fieldset>
-			<button type="roll" value="@{character_name} wirft eine Fleddern Probe [[1d@{rob}]]"></button>
-		</div>
+			<tr>
+				<td class="name"><b>Fleddern</b></td>
+				<td><input type="radio" id="d4_rob" name="attr_rob" value="4!"></td>
+				<td><input type="radio" id="d6_rob" name="attr_rob" value="6!"></td>
+				<td><input type="radio" id="d8_rob" name="attr_rob" value="8!"></td>
+				<td><input type="radio" id="d10_rob" name="attr_rob" value="10!"></td>
+				<td><input type="radio" id="d12_rob" name="attr_rob" value="12!"></td>
+				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{rob}]]"></button></td>
+				<td>1TP</td>
+			</tr>
+		</table>
 	</div>
 
 	<div>
 		<label>Lebenspunkte</label>
-		<input type="number" name="attr_hp_current" max="${hp_total}"/> / <input type="number" name="attr_hp_total" />
-		<label>Parade</label>
-		<input type="number" name="attr_parry" value="${closecombat}" min="0" max="${closecombat}"/>
+		<input type="number" name="attr_hp_current" min="0" max="(@{hp_total}/1)"/> / <input type="number" name="attr_hp_total" min="0" />
+		<label>Nahkampf Parade</label>
+		<input type="number" name="attr_parry" value="(@{closecombat}/2)" disabled="true" />
 	</div>
 </div>
