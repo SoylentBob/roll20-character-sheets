@@ -5,9 +5,9 @@
 				<th></th>
 				<th>W4</th>
 				<th>W6</th>
-				<th>W8</th>
-				<th>W10</th>
-				<th>W12</th>
+				<th><i>W8</i></th>
+				<th><i>W10</i></th>
+				<th><i>W12</i></th>
 				<th></th>
 				<th>Kosten</th>
 			</tr>
@@ -18,7 +18,7 @@
 				<td><input type="radio" id="d8_strength" name="attr_strength" value="8!"></td>
 				<td><input type="radio" id="d10_strength" name="attr_strength" value="10!"></td>
 				<td><input type="radio" id="d12_strength" name="attr_strength" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{strength}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Stärke}} {{value=[[1d@{strength} - @{wounds}]]}}"></button></td>
 				<td>2TP</td>
 			</tr>
 
@@ -29,7 +29,7 @@
 				<td><input type="radio" id="d8_agility" name="attr_agility" value="8!"></td>
 				<td><input type="radio" id="d10_agility" name="attr_agility" value="10!"></td>
 				<td><input type="radio" id="d12_agility" name="attr_agility" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{agility}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Gewandtheit}} {{value=[[1d@{agility} - @{wounds}]]}}"></button></td>
 				<td>2TP</td>
 			</tr>
 
@@ -40,7 +40,7 @@
 				<td><input type="radio" id="d8_closecombat" name="attr_closecombat" value="8!"></td>
 				<td><input type="radio" id="d10_closecombat" name="attr_closecombat" value="10!"></td>
 				<td><input type="radio" id="d12_closecombat" name="attr_closecombat" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{closecombat}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Nahkampf}} {{value=[[1d@{closecombat} - @{wounds}]]}}"></button></td>
 				<td>2TP</td>
 			</tr>
 
@@ -51,7 +51,7 @@
 				<td><input type="radio" id="d8_rangedcombat" name="attr_rangedcombat" value="8!"></td>
 				<td><input type="radio" id="d10_rangedcombat" name="attr_rangedcombat" value="10!"></td>
 				<td><input type="radio" id="d12_rangedcombat" name="attr_rangedcombat" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{rangedcombat}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Fernkampf}} {{value=[[1d@{rangedcombat} - @{wounds}]]}}"></button></td>
 				<td>2TP</td>
 			</tr>
 
@@ -62,7 +62,7 @@
 				<td><input type="radio" id="d8_tech" name="attr_tech" value="8!"></td>
 				<td><input type="radio" id="d10_tech" name="attr_tech" value="10!"></td>
 				<td><input type="radio" id="d12_tech" name="attr_tech" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{tech}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Technik}} {{value=[[1d@{tech} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 
@@ -73,7 +73,7 @@
 				<td><input type="radio" id="d8_knowledge" name="attr_knowledge" value="8!"></td>
 				<td><input type="radio" id="d10_knowledge" name="attr_knowledge" value="10!"></td>
 				<td><input type="radio" id="d12_knowledge" name="attr_knowledge" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{knowledge}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Wissen}} {{value=[[1d@{knowledge} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 
@@ -84,7 +84,7 @@
 				<td><input type="radio" id="d8_perception" name="attr_perception" value="8!"></td>
 				<td><input type="radio" id="d10_perception" name="attr_perception" value="10!"></td>
 				<td><input type="radio" id="d12_perception" name="attr_perception" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{perception}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Wahrnehmung}} {{value=[[1d@{perception} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 
@@ -95,7 +95,7 @@
 				<td><input type="radio" id="d8_drive_vehicles" name="attr_drive_vehicles" value="8!"></td>
 				<td><input type="radio" id="d10_drive_vehicles" name="attr_drive_vehicles" value="10!"></td>
 				<td><input type="radio" id="d12_drive_vehicles" name="attr_drive_vehicles" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{drive_vehicles}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Fahrzeuge steuern}} {{value=[[1d@{drive_vehicles} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 
@@ -106,7 +106,7 @@
 				<td><input type="radio" id="d8_secretly" name="attr_secretly" value="8!"></td>
 				<td><input type="radio" id="d10_secretly" name="attr_secretly" value="10!"></td>
 				<td><input type="radio" id="d12_secretly" name="attr_secretly" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{secretly}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Heimlich}} {{value=[[1d@{secretly} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 
@@ -117,7 +117,7 @@
 				<td><input type="radio" id="d8_talk" name="attr_talk" value="8!"></td>
 				<td><input type="radio" id="d10_talk" name="attr_talk" value="10!"></td>
 				<td><input type="radio" id="d12_talk" name="attr_talk" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{talk}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Reden}} {{value=[[1d@{talk} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 
@@ -128,7 +128,7 @@
 				<td><input type="radio" id="d8_lockpicking" name="attr_lockpicking" value="8!"></td>
 				<td><input type="radio" id="d10_lockpicking" name="attr_lockpicking" value="10!"></td>
 				<td><input type="radio" id="d12_lockpicking" name="attr_lockpicking" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{lockpicking}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Schlösser knacken}} {{value=[[1d@{lockpicking} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 
@@ -139,7 +139,7 @@
 				<td><input type="radio" id="d8_medicine" name="attr_medicine" value="8!"></td>
 				<td><input type="radio" id="d10_medicine" name="attr_medicine" value="10!"></td>
 				<td><input type="radio" id="d12_medicine" name="attr_medicine" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{medicine}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Medizin}} {{value=[[1d@{medicine} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 
@@ -150,7 +150,7 @@
 				<td><input type="radio" id="d8_explosives" name="attr_explosives" value="8!"></td>
 				<td><input type="radio" id="d10_explosives" name="attr_explosives" value="10!"></td>
 				<td><input type="radio" id="d12_explosives" name="attr_explosives" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{explosives}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Sprengstoff}} {{value=[[1d@{explosives} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 
@@ -161,7 +161,7 @@
 				<td><input type="radio" id="d8_luck" name="attr_luck" value="8!"></td>
 				<td><input type="radio" id="d10_luck" name="attr_luck" value="10!"></td>
 				<td><input type="radio" id="d12_luck" name="attr_luck" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{luck}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Glück}} {{value=[[1d@{luck} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 
@@ -172,7 +172,7 @@
 				<td><input type="radio" id="d8_cryptography" name="attr_cryptography" value="8!"></td>
 				<td><input type="radio" id="d10_cryptography" name="attr_cryptography" value="10!"></td>
 				<td><input type="radio" id="d12_cryptography" name="attr_cryptography" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{cryptography}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Kryptographie}} {{value=[[1d@{cryptography} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 
@@ -183,7 +183,7 @@
 				<td><input type="radio" id="d8_rob" name="attr_rob" value="8!"></td>
 				<td><input type="radio" id="d10_rob" name="attr_rob" value="10!"></td>
 				<td><input type="radio" id="d12_rob" name="attr_rob" value="12!"></td>
-				<td><button type="roll" value="@{character_name} wirft eine Stärke Probe [[1d@{rob}]]"></button></td>
+				<td><button type="roll" value="&{template:default} {{name=Fleddern}} {{value=[[1d@{rob} - @{wounds}]]}}"></button></td>
 				<td>1TP</td>
 			</tr>
 		</table>
@@ -192,6 +192,13 @@
 	<div>
 		<label>Lebenspunkte</label>
 		<input type="number" name="attr_hp_current" min="0" max="(@{hp_total}/1)"/> / <input type="number" name="attr_hp_total" min="0" />
+		<label>Wunden</label>
+		<div class="wounds">
+			<input type="radio" id="wound0" name="attr_wounds" value="0" title="Keine Wunden">
+			<input type="radio" id="wound1" name="attr_wounds" value="1" title="Eine Wunde">
+			<input type="radio" id="wound2" name="attr_wounds" value="2" title="Zwei Wunden">
+			<input type="radio" id="wound3" name="attr_wounds" value="3" title="Drei Wunden">
+		</div>
 		<label>Nahkampf Parade</label>
 		<input type="number" name="attr_parry" value="(@{closecombat}/2)" disabled="true" />
 	</div>
