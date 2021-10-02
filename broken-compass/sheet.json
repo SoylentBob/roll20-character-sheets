@@ -1,0 +1,9 @@
+{
+	"html": "chracter-sheet.html",
+	"css": "character-sheet.css",
+	"authors": "SoylentBob",
+	"roll20userid": "1",
+	"preview": "kitchensink.png",
+	"instructions": "A character sheet for Broken Compass",
+	"legacy": false
+}

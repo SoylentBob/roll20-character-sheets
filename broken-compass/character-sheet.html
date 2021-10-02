@@ -1,0 +1,22 @@
+<div class="character-sheet">
+  <div class="field">
+    <div class="field-block">
+      <label for="attr_action">Action</label>
+      <div class="field-value">
+        <input type="radio" name="attr_action" value="1">
+        <input type="radio" name="attr_action" value="2">
+        <input type="radio" name="attr_action" value="3">
+      </div>
+      <button type="roll" value="&{template:default} {{name=Action}} {{value=[[@{action}d6m]]}}"></button>
+    </div>
+    <div class="skill">
+      <label for="attr_fight">Fight</label>
+      <div class="field-value">
+        <input type="radio" name="attr_fight" value="1">
+        <input type="radio" name="attr_fight" value="2">
+        <input type="radio" name="attr_fight" value="3">
+      </div>
+      <button type="roll" value="&{template:default} {{name=Fight}} {{value=[[(@{fight} + @{action})d6mt]]}}"></button>
+    </div>
+  </div>
+</div>
